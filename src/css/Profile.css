@@ -1,0 +1,70 @@
+/* Container for the profile information */
+.profile {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f7f5ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Title styling */
+  .profile-title {
+    text-align: center;
+    font-size: 28px;
+    color: #4B0082; 
+    margin-bottom: 30px;
+    border-bottom: 2px solid #FFD700; 
+    padding-bottom: 10px;
+  }
+  
+  /* Info container */
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+  
+  /* Individual info item */
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+  }
+  
+  /* Label text styling */
+  .info-item label {
+    font-weight: bold;
+    color: #333; 
+  }
+  
+  /* For loading and error messages */
+  .loading-message,
+  .error-message {
+    text-align: center;
+    font-size: 18px;
+    color: #FF0000;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .profile {
+      padding: 20px;
+    }
+  
+    .profile-title {
+      font-size: 24px;
+    }
+  
+    .info-item {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 14px;
+    }
+  }
+  

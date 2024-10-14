@@ -1,0 +1,148 @@
+/* Main container for the dashboard */
+.dashboard {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff; 
+  border-radius: 12px; 
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the dashboard */
+.dashboard-title {
+  font-size: 32px;
+  color: #4B0082;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Information section for user details */
+.dashboard-info {
+  margin-bottom: 30px;
+}
+
+/* Styling for paragraphs in the info section */
+.dashboard-info p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #555;
+}
+
+/* Admin and Student dashboard containers */
+.admin-dashboard,
+.student-dashboard {
+  background-color: #f4f2ff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Overview section for admin and student dashboards */
+.admin-overview,
+.student-overview {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling for h2 elements (Dashboard headings) */
+h2 {
+  color: #4B0082;
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 10px;
+}
+
+/* Header styling for h3 elements (Sub-headings) */
+h3 {
+  color: #4B0082;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styling for unordered lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List item styling */
+li {
+  margin-bottom: 12px;
+}
+
+/* Links inside list items */
+li a {
+  color: #4B0082;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+/* Bullet point before each link */
+li a::before {
+  content: '•';
+  color: #FFD700;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+/* Hover effect for links */
+li a:hover {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+/* Grid layout for options, if used */
+.options-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Individual option cards */
+.option-card {
+  flex: 1;
+  min-width: 220px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+  border: 1px solid #ddd;
+}
+
+/* Hover effect for option cards */
+.option-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+}
+
+/* Styling for icons inside cards */
+.option-icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #4B0082;
+}
+
+/* Links inside option cards */
+.option-card a {
+  text-decoration: none;
+  color: #4B0082;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Hover effect for links in option cards */
+.option-card a:hover {
+  color: #FFD700;
+}

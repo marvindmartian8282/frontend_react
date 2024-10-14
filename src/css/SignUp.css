@@ -1,0 +1,145 @@
+/* Signup container */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #f7f5ff; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h2 {
+  color: #4B0082;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 12px; 
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #4B0082;
+}
+
+.input-group input,
+.input-group select {
+  padding: 8px; 
+  font-size: 14px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 9px;
+  margin-top: 5px;
+}
+
+/* Signup button styling */
+button.signup-button {
+  padding: 10px;
+  background-color: #FFD700;
+  color: #4B0082;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.signup-button:hover {
+  background-color: #4B0082;
+  color: white;
+}
+
+/* Modal overlay styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal content styling */
+.modal-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+}
+
+.modal-content h2 {
+  text-align: center;
+}
+
+.modal-close-button {
+  padding: 10px;
+  background-color: #4B0082;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.modal-close-button:hover {
+  background-color: #FFD700;
+  color: #4B0082;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .input-group input,
+  .input-group select {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button.signup-button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .modal-content {
+    padding: 15px;
+  }
+}

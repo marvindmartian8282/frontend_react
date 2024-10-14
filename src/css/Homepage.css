@@ -1,0 +1,214 @@
+/* Homepage container */
+.homepage {
+  background-color: #f7f5ff;
+  color: #333;
+  padding: 40px 20px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* Center content */
+.content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Courses and programs section */
+.courses-programs {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for featured courses */
+.courses-programs h3 {
+  font-size: 28px;
+  color: #4B0082;
+  margin-bottom: 15px;
+}
+
+/* Description paragraph */
+.courses-programs p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Featured courses subheading */
+.courses-programs h4 {
+  font-size: 24px;
+  color: #FFD700;
+  margin-bottom: 25px;
+}
+
+/* Flex layout for featured courses */
+.courses-programs ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Styling for individual course cards */
+.courses-programs li {
+  background-color: #EDE7F6;
+  padding: 20px;
+  flex: 1 1 45%;
+  min-width: 300px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Course title */
+.courses-programs h5 {
+  font-size: 20px;
+  color: #4B0082;
+  margin-bottom: 10px;
+}
+
+/* Course description */
+.courses-programs li p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Hover effect for course cards */
+.courses-programs li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button for exploring courses */
+.cta-button {
+  display: inline-block;
+  background-color: #FFD700;
+  color: #4B0082;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: #4B0082;
+  color: white;
+}
+
+/* All Courses Section (Grid Layout) */
+.all-courses {
+  padding: 50px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Title for All Courses */
+.all-courses h4 {
+  font-size: 28px;
+  color: #4B0082;
+  margin-bottom: 25px;
+}
+
+/* All Courses program section heading */
+.all-courses h5 {
+  font-size: 26px;
+  color: #4B0082;
+  margin-bottom: 20px;
+}
+
+/* Grid layout for all courses */
+.all-courses ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Grid layout for flexible cards */
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+/* Styling for individual course cards in All Courses */
+.all-courses li {
+  background-color: #EDE7F6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left; 
+}
+
+/* Course title for All Courses */
+.all-courses h6 {
+  font-size: 18px;
+  color: #4B0082;
+  margin-bottom: 8px;
+}
+
+/* Course details for All Courses */
+.all-courses li p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+  line-height: 1.5;
+  text-align: left !important; 
+}
+
+/* Hover effect for course cards in All Courses */
+.all-courses li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button for going back */
+.all-courses .cta-button {
+  display: block; 
+  background-color: #FFD700;
+  color: #4B0082;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+}
+
+.all-courses .cta-button:hover {
+  background-color: #4B0082;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .courses-programs ul, .all-courses ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .courses-programs li, .all-courses li {
+    flex: 1 1 100%;
+  }
+
+  .courses-programs h3, .all-courses h4 {
+    font-size: 24px;
+  }
+
+  .courses-programs h4, .all-courses h5 {
+    font-size: 20px;
+  }
+}
